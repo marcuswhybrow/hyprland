@@ -30,11 +30,6 @@
         nixpkgs.follows = "nixpkgs";
         alacritty.follows = "alacritty";
         logout.follows = "logout";
-        # networking.inputs = {
-        #   nixpkgs.follows = "nixpkgs";
-        #   rofi.follows = "rofi";
-        # };
-        # nixpkgs-updates.inputs.nixpkgs.follows = "nixpkgs";
         rofi.follows = "rofi";
       };
     };
@@ -69,6 +64,12 @@
       paths = [ wrapper pkgs.hyprland ];
       meta.description = "Hyprland launched with Marcus' `--config` in the nix store";
     };
+
+    packages.x86_64-linux.fish-auto-login = pkgs.writeTextDir "share/fish/vendor_conf.d/hyprland.fish" ''
+      if status is-login
+        ${inputs.self.packages.x86_64-linux.hyprland}/bin/Hyprland
+      end
+    '';
 
     packages.x86_64-linux.default = inputs.self.packages.x86_64-linux.hyprland;
 
