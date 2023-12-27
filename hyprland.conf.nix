@@ -196,5 +196,5 @@ bind = SUPER, L, exec, ${playerctl} position 1+
 bind = SUPER_SHIFT, J, exec, ${playerctl} position 5-
 bind = SUPER_SHIFT, L, exec, ${playerctl} position 5+
 
-bind = , PRINT, exec, hyprshot -m output --current --silent
+bind = , Print, exec, hyprshot -m output --current
 ''
