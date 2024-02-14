@@ -196,5 +196,5 @@ bind = SUPER, L, exec, ${playerctl} position 1+
 bind = SUPER_SHIFT, J, exec, ${playerctl} position 5-
 bind = SUPER_SHIFT, L, exec, ${playerctl} position 5+
 
-bind = , Print, exec, grim --type jpeg --quality 80 && notify-send --urgency low --expire-time 500 "Screenshot Saved"
+bind = , Print, exec, grim -t jpeg -q 80 && notify-send --urgency low --expire-time 500 "Screenshot Saved"
 ''
