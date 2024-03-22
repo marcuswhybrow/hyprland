@@ -115,10 +115,6 @@ misc {
     force_default_wallpaper = 0
 }
 
-device:epic-mouse-v1 {
-    sensitivity = -0.5
-}
-
 $mainMod = ALT
 
 bind = $mainMod, Q, exec, ${alacritty}
