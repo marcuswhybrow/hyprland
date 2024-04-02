@@ -26,7 +26,8 @@
       | ${sort} --random-sort \
       | ${tail} --lines 1 \
       | ${xargs} ${swaybg} --output '*' --mode center --image
-  '';
+      '';
+  firefox = "${pkgs.firefox}/bin/firefox";
 in ''
 
 monitor=,preferred,auto,auto
@@ -117,9 +118,10 @@ misc {
 
 $mainMod = ALT
 
-bind = $mainMod, Q, exec, ${alacritty}
 bind = $mainMod, RETURN, exec, ${alacritty}
 bind = $mainMod SHIFT, RETURN, exec, ${private}
+bind = $mainMod, I, exec ${firefox}
+bind = $mainMod SHIFT, I, exec ${firefox} --private-window
 bind = $mainMod, ESCAPE, exec, bash ${logout}
 bind = $mainMod SHIFT, Q, killactive, 
 bind = $mainMod, M, exit,
