@@ -120,8 +120,8 @@ $mainMod = ALT
 
 bind = $mainMod, RETURN, exec, ${alacritty}
 bind = $mainMod SHIFT, RETURN, exec, ${private}
-bind = $mainMod, I, exec ${firefox}
-bind = $mainMod SHIFT, I, exec ${firefox} --private-window
+bind = $mainMod, I, exec, ${firefox}
+bind = $mainMod SHIFT, I, exec, ${firefox} --private-window
 bind = $mainMod, ESCAPE, exec, bash ${logout}
 bind = $mainMod SHIFT, Q, killactive, 
 bind = $mainMod, M, exit,
