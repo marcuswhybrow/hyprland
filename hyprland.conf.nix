@@ -1,11 +1,11 @@
-{ pkgs, inputs, ... }: let 
-  alacritty = "${inputs.alacritty.packages.x86_64-linux.alacritty}/bin/alacritty";
-  private = "${inputs.private.packages.x86_64-linux.private}/bin/private";
-  logout = "${inputs.logout.packages.x86_64-linux.logout}/bin/logout";
-  drun = "${inputs.rofi.packages.x86_64-linux.drun}/bin/drun";
-  waybar = "${inputs.waybar.packages.x86_64-linux.waybar}/bin/waybar";
-  volume = "${inputs.volume.packages.x86_64-linux.volume}/bin/volume";
-  brightness = "${inputs.brightness.packages.x86_64-linux.brightness}/bin/brightness";
+{ pkgs, mwpkgs, inputs, ... }: let 
+  alacritty = "${mwpkgs.alacritty}/bin/alacritty";
+  private = "${mwpkgs.private}/bin/private";
+  logout = "${mwpkgs.logout}/bin/logout";
+  drun = "${mwpkgs.rofi}/bin/drun";
+  waybar = "${mwpkgs.waybar}/bin/waybar";
+  volume = "${mwpkgs.volume}/bin/volume";
+  brightness = "${mwpkgs.brightness}/bin/brightness";
   pcmanfm = "${pkgs.pcmanfm}/bin/pcmanfm";
   playerctl = "${pkgs.playerctl}/bin/playerctl";
   assets = pkgs.stdenv.mkDerivation {
