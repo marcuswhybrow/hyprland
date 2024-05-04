@@ -129,13 +129,13 @@ bind = $mainMod, E, exec, ${pcmanfm}
 bind = $mainMod, V, togglefloating, 
 bind = $mainMod, D, exec, ${drun}
 bind = $mainMod, P, pseudo, 
-bind = $mainMod, J, togglesplit, 
+bind = $mainMod, T, togglesplit, 
 bind = $mainMod, F, fullscreen
 
-bind = $mainMod, h, movefocus, l
-bind = $mainMod, l, movefocus, r
-bind = $mainMod, k, movefocus, u
-bind = $mainMod, j, movefocus, d
+bind = $mainMod, H, movefocus, l
+bind = $mainMod, L, movefocus, r
+bind = $mainMod, K, movefocus, u
+bind = $mainMod, J, movefocus, d
 
 bind = $mainMod, 1, workspace, 1
 bind = $mainMod, 2, workspace, 2
