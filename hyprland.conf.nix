@@ -2,7 +2,7 @@
   alacritty = "${mwpkgs.alacritty}/bin/alacritty";
   private = "${mwpkgs.private}/bin/private";
   logout = "${mwpkgs.logout}/bin/logout";
-  drun = "${mwpkgs.rofi}/bin/drun";
+  drun = "${mwpkgs.drun}/bin/drun";
   waybar = "${mwpkgs.waybar}/bin/waybar";
   volume = "${mwpkgs.volume}/bin/volume";
   brightness = "${mwpkgs.brightness}/bin/brightness";
