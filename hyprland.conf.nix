@@ -105,7 +105,8 @@ dwindle {
 }
 
 master {
-    new_is_master = true
+    # new window becomes master
+    new_status = master
 }
 
 gestures {
