@@ -27,7 +27,7 @@
       | ${tail} --lines 1 \
       | ${xargs} ${swaybg} --output '*' --mode center --image
       '';
-  firefox = "${pkgs.firefox}/bin/firefox";
+  zen = "${inputs.zen-browser.packages.x86_64-linux.generic}/bin/zen";
 in ''
 
 monitor=,preferred,auto,auto
@@ -121,8 +121,8 @@ $mainMod = ALT
 
 bind = $mainMod, RETURN, exec, ${alacritty}
 bind = $mainMod SHIFT, RETURN, exec, ${private}
-bind = $mainMod, I, exec, ${firefox}
-bind = $mainMod SHIFT, I, exec, ${firefox} --private-window
+bind = $mainMod, I, exec, ${zen}
+bind = $mainMod SHIFT, I, exec, ${zen} --private-window
 bind = $mainMod, ESCAPE, exec, bash ${logout}
 bind = $mainMod SHIFT, Q, killactive, 
 bind = $mainMod, M, exit,
