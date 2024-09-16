@@ -2,10 +2,13 @@
   description = "Hyprland (window manager) configured by Marcus";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    mwpkgs = {
-      url = "github:marcuswhybrow/mwpkgs";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    alacritty.url = "github:marcuswhybrow/alacritty";
+    private.url = "github:marcuswhybrow/private";
+    logout.url = "github:marcuswhybrow/logout";
+    rofi.url = "github:marcuswhybrow/rofi";
+    waybar.url = "github:marcuswhybrow/waybar";
+    volume.url = "github:marcuswhybrow/volume";
+    brightness.url = "github:marcuswhybrow/brightness";
 
     zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
